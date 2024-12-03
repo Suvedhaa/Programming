@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate <a> Horizontally</title>
+  <style>
+    a {
+      display: inline-block; /* Allows the rotation to apply properly */
+      transform: rotateY(180deg); /* Flips the element horizontally */
+      transform-origin: center; /* Pivot point for the rotation */
+      font-size: 24px;
+      color: #333;
+      text-decoration: none; /* Remove underline if desired */
+      transition: transform 0.5s ease; /* Smooth animation */
+    }
+
+    a:hover {
+      transform: rotateY(0deg); /* Resets to normal orientation on hover */
+    }
+  </style>
+</head>
+<body>
+  <a href="#">Click Me!</a>
+</body>
+</html>

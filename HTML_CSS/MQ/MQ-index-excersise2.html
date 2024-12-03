@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ-Flex</title>
+</head>
+
+<body>
+    <style>
+        .container-one {
+            height: 270px;
+            background-color: rgb(85, 196, 85);
+            flex-basis: 100%;
+            margin: 10px;
+        }
+
+        .container-two {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .container-two-box {
+            height: 270px;
+            background-color: #2ac3ea;
+            flex-basis: 30%;
+            margin: 10px;
+        }
+
+        @media screen and (max-width:1000px) {
+            .container-two-box {
+                flex-basis: 100%;
+            }
+        }
+
+        .container-three {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .container-three-box {
+            height: 270px;
+            background-color: grey;
+            flex-basis: 20%;
+            margin: 10px;
+        }
+
+        @media screen and (max-width:1000px) {
+            .container-three-box {
+                flex-basis: 40%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .container-three-box {
+                flex-basis: 100%;
+            }
+        }
+
+
+    </style>
+
+    <div class="container-one">
+    </div>
+
+    <div class="container-two">
+        <div class="container-two-box">
+        </div>
+        <div class="container-two-box">
+        </div>
+        <div class="container-two-box">
+        </div>
+    </div>
+
+    <div class="container-three">
+        <div class="container-three-box">
+        </div>
+        <div class="container-three-box">
+        </div>
+        <div class="container-three-box">
+        </div>
+        <div class="container-three-box">
+        </div>
+    </div>
+
+</body>
+
+</html>

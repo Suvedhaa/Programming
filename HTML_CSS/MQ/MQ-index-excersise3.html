@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ-Flex</title>
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .header {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        h1 {
+            flex-basis: 17%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+
+        img {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+        .container-box {
+            height: 280px;
+            border: black 2px solid;
+            flex-basis: 20%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:1400px) {
+            .container-box {
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+
+            img {
+                margin: 10px;
+                width: 330px;
+                height: 330px;
+            }
+
+            .container-box {
+                height: 410px;
+                border: black 2px solid;
+                flex-basis: 40%;
+                margin: 10px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:760px) {
+
+            img {
+                margin: 10px;
+                width: 450px;
+                height: 400px;
+            }
+
+            .container-box {
+                height: 480px;
+                border: black 2px solid;
+                flex-basis: 80%;
+                margin: 10px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+
+            img {
+                margin: 10px;
+                width: 300px;
+                height: 300px;
+            }
+
+            .container-box {
+                height: 380px;
+                border: black 2px solid;
+                flex-basis: 80%;
+                margin: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <div class="header">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <div class="container">
+        <div class="container-box">
+            <img src="https://picsum.photos/400/400/?1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?5">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?6">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?7">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?8">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?9">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?10">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?11">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+        <div class="container-box">
+            <img src="https://picsum.photos/200/200/?12">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, perferendis.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

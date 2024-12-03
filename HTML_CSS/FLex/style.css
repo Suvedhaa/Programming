@@ -1,0 +1,15 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h1{
+    color: black;
+    background-color: greenyellow;
+    margin: 20px;
+    padding: 10px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
