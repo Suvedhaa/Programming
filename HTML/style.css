@@ -1,0 +1,654 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+.top {
+	background-color: #e72c8d;
+	color: white;
+	padding: 2px;
+	display: inline-block;
+	width: 70%;
+	font-size: small;
+	height: 30px;
+	margin-top: 8px;
+	border-radius: 5px;
+}
+
+#dynamicParagraph,
+#dynamicParagraph1 {
+	padding-top: 8px;
+	cursor: pointer;
+}
+
+.header {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.heading {
+	color: #e72c8d;
+	display: inline-block;
+	margin-left: 225px;
+	font-size: 45px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: inline-block;
+	cursor: context-menu;
+
+
+}
+
+.search-box {
+	height: 35px;
+	width: 400px;
+	margin-left: 80px;
+	display: inline-block;
+}
+
+.icon-table {
+	display: inline;
+}
+
+.account-icon {
+	height: 20px;
+	width: 20px;
+	margin-left: 110px;
+	display: inline-block;
+	cursor: pointer;
+
+}
+
+.wishlist-icon {
+	height: 20px;
+	width: 20px;
+	margin-left: 47px;
+	display: inline-block;
+	cursor: pointer;
+
+}
+
+.cart-icon {
+	height: 20px;
+	width: 20px;
+	margin-left: 43px;
+	display: inline-block;
+	cursor: pointer;
+
+}
+
+.icon-name1 {
+	margin-left: 100px;
+	display: inline-block;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.icon-name2 {
+	margin-left: 38px;
+	display: inline-block;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.icon-name3 {
+	margin-left: 43px;
+	display: inline-block;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.category {
+	display: inline-block;
+}
+
+.brandlist {
+	margin-left: 235px;
+	display: inline-block;
+	position: relative;
+}
+
+.brand-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.brand-text:hover {
+	color: grey;
+}
+
+.brand-menu {
+	display: none;
+}
+
+.brand-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.brand-menu span:hover {
+	background-color: grey;
+}
+
+.brandlist:hover .brand-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+
+.PerfumesForWomenlist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.PerfumesForWomen-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.PerfumesForWomen-text:hover {
+	color: grey;
+}
+
+.PerfumesForWomen-menu {
+	display: none;
+}
+
+.PerfumesForWomen-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.PerfumesForWomen-menu span:hover {
+	background-color: grey;
+}
+
+.PerfumesForWomenlist:hover .PerfumesForWomen-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+
+.PerfumesForMenlist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.PerfumesForMen-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.PerfumesForMen-text:hover {
+	color: grey;
+}
+
+.PerfumesForMen-menu {
+	display: none;
+}
+
+.PerfumesForMen-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.PerfumesForMen-menu span:hover {
+	background-color: grey;
+}
+
+.PerfumesForMenlist:hover .PerfumesForMen-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+
+.Skincarelist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.Skincare-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Skincare-text:hover {
+	color: grey;
+}
+
+.Skincare-menu {
+	display: none;
+}
+
+.Skincare-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.Skincare-menu span:hover {
+	background-color: grey;
+}
+
+.Skincarelist:hover .Skincare-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+
+.Giftslist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.Gifts-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Gifts-text:hover {
+	color: grey;
+}
+
+.Gifts-menu {
+	display: none;
+}
+
+.Gifts-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.Gifts-menu span:hover {
+	background-color: grey;
+}
+
+.Giftslist:hover .Gifts-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+
+.NewArrivalslist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.NewArrivals-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.NewArrivals-text:hover {
+	color: grey;
+}
+
+.NewArrivals-menu {
+	display: none;
+}
+
+.NewArrivals-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.NewArrivals-menu span:hover {
+	background-color: grey;
+}
+
+.NewArrivalslist:hover .NewArrivals-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+.BestSellerlist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.BestSeller-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.BestSeller-text:hover {
+	color: grey;
+}
+
+.BestSeller-menu {
+	display: none;
+}
+
+.BestSeller-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.BestSeller-menu span:hover {
+	background-color: grey;
+}
+
+.BestSellerlist:hover .BestSeller-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+.BlackFridaylist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.BlackFriday-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: yellow;
+}
+
+.BlackFriday-text:hover {
+	color: grey;
+}
+
+.BlackFriday-menu {
+	display: none;
+}
+
+.BlackFriday-menu span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	z-index: 100;
+	width: 200px;
+}
+
+.BlackFriday-menu span:hover {
+	background-color: grey;
+}
+
+.BlackFridaylist:hover .BlackFriday-menu {
+	display: inline-block;
+	background-color: white;
+	position: absolute;
+}
+
+.Bloglist {
+	margin-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.Blog-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Blog-text:hover {
+	color: grey;
+}
+
+.MainImage {
+	display: block;
+	text-align: center;
+}
+
+.Mainimg {
+	width: 70%;
+	margin-top: 20px;
+}
+
+.SubImage {
+	display: inline-block;
+	text-align: center;
+}
+
+.Sub1img {
+	width: 35%;
+	margin-top: 5px;
+}
+
+.Sub2img {
+	width: 35%;
+	margin-top: 5px;
+}
+
+.LastImage {
+	display: block;
+	text-align: center;
+}
+
+.Lastimg {
+	width: 70%;
+	margin-top: 20px;
+}
+
+.Header-sub {
+	text-align: center;
+	margin: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.promotion1 {
+	color: white;
+	background-color: red;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.promotion2 {
+	color: white;
+	background-color: green;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.productname1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+
+}
+
+.productvol1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: inline-block;
+}
+
+.productprice1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.productinfo1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: inline-block;
+	font-size: 10px;
+}
+
+.Products1box1 {
+	display: inline-block;
+	width: 250px;
+	border-style: solid;
+	border-color: white;
+	cursor: pointer;
+}
+
+.Products1 {
+	text-align: center;
+}
+
+
+.blogname1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	text-align: left;
+
+}
+
+.bloginfo1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: inline-block;
+	font-size: 10px;
+}
+
+.blogbox1 {
+	display: inline-block;
+	width: 35%;
+	border-style: solid;
+	border-color: white;
+	cursor: pointer;
+}
+
+.blogimg1 {
+	width: 455px;
+	height: 367px;
+	display: inline-block;
+
+}
+
+.blog1,
+.blog2 {
+	text-align: center;
+}
+
+.blog2 {
+	margin-top: 20px;
+}
+
+.bigparas {
+	text-align: center;
+}
+
+.para1,
+.para2,
+.para3,
+.para4 {
+	width: 70%;
+	display: inline-block;
+}
+
+.para2,
+.para3,
+.para4 {
+	margin-top: 10px;
+}
+
+.bottom {
+	text-align: center;
+}
+
+.bottomlist1 {
+	display: inline-block;
+	width: 280px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.bottomnam1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.bottomnam1:hover {
+	color: grey;
+}
+
+.bottom1-menu span {
+	display: inline-block;
+	color: #333;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	width: 150px
+}
+
+ul {
+	list-style-type: none;
+}
+
+.info {
+	text-align: center;
+	margin: 20px;
+	padding: 10px;
+}
+
+.finalimg {
+
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.finalimage {
+	text-align: center;
+}
