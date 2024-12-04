@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Type to Show</h1>
+        <input onkeyup="typeToShow()" type="text" id="textBox" placeholder="Type"> <br>
+        <p id="show"
+            style="background-color: #b6b3b8e8; display:inline-block; margin-top: 30px; border: 2px black solid; padding: 1px; font-size: large; height: 25px;">
+            Type to show</p>
+    </center>
+
+    <script>
+        var show1 = document.getElementById("show")
+        var textBox1 = document.getElementById("textBox")
+
+        function typeToShow() {
+
+            show1.textContent = textBox1.value
+            console.log(show1.textContent)
+        }
+    </script>
+
+</body>
+
+</html>

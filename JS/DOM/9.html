@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Click the Names to show</h1>
+        <h3 id="Name"></h3>
+        <button onclick="update(event)">Suvedhaa B</button> 
+        <button onclick="update(event)">Sowmya B</button> 
+        <button onclick="update(event)">Kalai Selvi B</button>
+        <button onclick="update(event)">Baskar K</button>
+    </center>
+
+    <script>
+        var nameToShow = document.getElementById("Name")  
+
+        function update(event) {   
+            nameToShow.textContent = event.target.textContent
+        }
+    </script>
+
+</body>
+
+</html> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Click the Names to show</h1>
+        <h3 id="Name"></h3>
+        <button onclick="update1()" id="button1">Suvedhaa B</button> 
+        <button onclick="update2()" id="button2">Sowmya B</button> 
+        <button onclick="update3()" id="button3">Kalai Selvi B</button>
+        <button onclick="update4()" id="button4">Baskar K</button>
+    </center>
+
+    <script>
+        var button1 = document.getElementById("button1")
+        var button2 = document.getElementById("button2")
+        var button3 = document.getElementById("button3")
+        var button4 = document.getElementById("button4")
+        var nameToShow = document.getElementById("Name")  
+
+        function update1() {     
+            nameToShow.textContent = button1.textContent
+        }
+        function update2() {     
+            nameToShow.textContent = button2.textContent
+        }
+        function update3() {     
+            nameToShow.textContent = button3.textContent
+        }
+        function update4() {     
+            nameToShow.textContent = button4.textContent
+        }
+    </script>
+
+</body>
+
+</html> 

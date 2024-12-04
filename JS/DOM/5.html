@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Iterate by click</h1>
+        <button onclick="iterateByClick()" id="button">Click to Iterate My Name</button> <br>
+        <div id="show"></div>
+    </center>
+
+    <script>
+        var show1 = document.getElementById("show")
+
+
+        function iterateByClick() {
+            var tagIterate = document.createElement("h3")
+            tagIterate.textContent ="Suvedhaa Baskar"
+            show1.append(tagIterate)
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Type and Click to Show</h1>
+        <input type="text" id="textBox" placeholder="Type">
+        <button onclick="typeClickToShow()" id="button">Click to show</button><br>
+        <h3 id="show">Type to show</h3>
+    </center>
+
+    <script>
+        var show1 = document.getElementById("show")
+        var textBox1 = document.getElementById("textBox")
+        var button1 = document.getElementById("button")
+
+        function typeClickToShow() {
+            show1.textContent = textBox1.value
+            console.log(show1.textContent)
+        }
+    </script>
+
+</body>
+
+</html>
