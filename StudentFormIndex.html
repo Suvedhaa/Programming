@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="top">Student Form</h1>
+    <div id="form-container">
+        <table id="form-table" border="2">
+            <tr>
+                <td>
+                    <span>Name</span>
+                </td>
+                <td>
+                    <input id="one" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Age</span>
+                </td>
+                <td>
+                    <input id="two" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Gender</span>
+                </td>
+                <td>
+                    <div>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Course</span>
+                </td>
+                <td>
+                    <select id="four">
+                        <option>JavaScript</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>E-mail</span>
+                </td>
+                <td>
+                    <input id="five" type="email">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="save-container">
+        <button id="save" onclick="addRow()">Save</button>
+    </div>
+
+    <div id="result-container">
+        <table id="result-table" border="1">
+            <tr>
+                <td>
+                    <span>Name</span>
+                </td>
+                <td>
+                    <span>Age</span>
+                </td>
+                <td>
+                    <span>Gender</span>
+                </td>
+                <td>
+                    <span>Course</span>
+                </td>
+                <td>
+                    <span>E-mail</span>
+                </td>
+                <td>
+                    <span>Action</span>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script>
+        var name1 = document.getElementById("one")
+        var age2 = document.getElementById("two")
+        var gender3 = document.getElementsByName("gender")
+        var course4 = document.getElementById("four")
+        var email5 = document.getElementById("five")
+
+        var saveButton = document.getElementById("save")
+
+
+        var divResultTable = document.getElementById("result-table")
+
+        function addRow() {
+
+            var selectedGender = '';
+            for (var i = 0; i < gender3.length; i=i+1) {
+                if (gender3[i].checked) {
+                    selectedGender = gender3[i].value;
+                    break;
+                }
+            }
+
+            var rowItem = document.createElement("tr")
+
+            rowItem.innerHTML = `
+                <td><p>${name1.value}</p></td>
+                <td><p>${age2.value}</p></td>
+                <td><p>${selectedGender}</p></td>
+                <td><p>${course4.value}</p></td>
+                <td><p>${email5.value}</p></td>
+                <td><button onclick="deleteRow(event)">Delete</button></td>
+            `
+            divResultTable.append(rowItem)
+
+            // Clear the input fields for the next entry
+            name1.value = ""
+            age2.value = ""
+            for (let i = 0; i < gender3.length; i++) {
+                gender3[i].checked = false
+            }
+            course4.value = "JavaScript"
+            email5.value = ""
+
+
+
+        }
+
+        function deleteRow(event) {
+            event.target.parentElement.parentElement.remove()
+
+        }
+
+    </script>
+
+</body>
+
+</html>
